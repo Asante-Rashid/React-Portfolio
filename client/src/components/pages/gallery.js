@@ -1,14 +1,22 @@
 import React from "react";
+import ProjectsCard from "./components/projectsCard";
 
 function Gallery() {
     return (
       <div>
-          <h1>Galley placeholder</h1>
-          <h2>list of skills</h2>
+          <h1>Gallery placeholder</h1>
+          <h2>list of projects</h2>
     
-              <p>
-               Some lorewm about how great I am.
-              </p>    
+          {this.state.projects.map(project => (
+          <ProjectsCard
+            id={project.id}
+            key={project.id}
+            title={project.title}
+            repo={project.repo}
+            location={project.location}
+            image={project.image}
+          />
+        ))}
       </div>
     );
   }
