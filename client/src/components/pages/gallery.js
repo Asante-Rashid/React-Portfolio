@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsCard from "./components/projectsCard";
+import ProjectCard from "../projectsCard";
 
 function Gallery() {
     return (
@@ -8,7 +8,7 @@ function Gallery() {
           <h2>list of projects</h2>
     
           {this.state.projects.map(project => (
-          <ProjectsCard
+          <ProjectCard
             id={project.id}
             key={project.id}
             title={project.title}

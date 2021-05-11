@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // import pages and nav tab liek W19_A22
 import Nav from "./components/header";
 import About from "./components/pages/about";
